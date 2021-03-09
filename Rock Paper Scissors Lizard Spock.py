@@ -12,6 +12,8 @@ while player == False:
     player = input("Rock, Paper, Scissors, Lizard, Spock ")
     if player == computer:
         print("Tie")
+    
+    # Rock code starts here
     elif player == "Rock":
         if computer == "Paper":
             print("You lose", computer, "covers", player)
@@ -32,6 +34,8 @@ while player == False:
             print("You lose", computer, "crushes", player)
         else:
             print("You win", player, "poisons", computer)
+    
+    # Paper code starts here
     elif player == "Paper":
         if computer == "Lizard":
             print("You lose", computer, "eats", player)
@@ -47,8 +51,10 @@ while player == False:
             print("You win", player, "covers", computer)
         else:
             print("You lose", computer, "cuts", player)
+    
+    # Scissors code starts here
     elif player == "Scissors":
-       if somputer == "Rock":
+       if computer == "Rock":
             print("You lose", computer, "crushes", player)
         else:
             print("you win", player, "covers", computer)
@@ -67,6 +73,8 @@ while player == False:
             print("You win", player, "disproves", computer)
         else:
             print("You lose", computer, "eats", player)
+    
+    # Lizard code starts here
     elif player == "Lizard":
         if computer == "Rock":
             print("You lose", computer, "crushes", player)
@@ -87,6 +95,8 @@ while player == False:
             print("You win", player, "poisons", computer)
         else:
             print("You lose", computer, "decapitates", player)
+   
+   # Spock code starts here
     elif player == "Spock":
         if computer == "Rock":
             print("You win", player, "vaperizes", computer)
@@ -107,7 +117,7 @@ while player == False:
             print("You lose", computer, "poisons", player)
         else:
             print("You win", player, "crushes", player) 
-        else:
+    else:
         print("That's not a valid play, Check Spelling")   
 
 player = False
